@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="135dp" android:padding="10dp">
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+
+            <FrameLayout
+
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="1"
+                    android:background="@drawable/background_listview" android:padding="5dp"
+                    android:layout_marginRight="70dp">
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom">
+                    <Button
+                            android:text="تعديل"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp" android:id="@+id/doctor_edit_listview"
+                            android:layout_weight="1"
+                            android:background="@drawable/backgroundbutton" android:textColor="#FFFFFF"/>
+                    <Button
+                            android:text="التفاصيل"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp" android:id="@+id/doctor_info_listview"
+                            android:layout_weight="1"
+                            android:background="@drawable/backgroundbutton" android:textColor="#FFFFFF"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingRight="5dp">
+
+                    <TextView
+                            android:id="@+id/doctor_name_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="اسم الطبيب"
+                            android:textColor="#B647CA"
+                            android:textSize="14sp" />
+
+                    <TextView
+                            android:id="@+id/doctor_addres_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="العنوان"
+                            android:textColor="#6A4BC2"
+                            android:textSize="14sp" />
+
+                    <TextView
+                            android:id="@+id/doctor_phone_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginRight="5dp"
+                            android:text="رقم الهاتف"
+                            android:textColor="#FFB164BE"
+                            android:textSize="14sp" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_gravity="right">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/personal_image_show"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/code"
+                        app:civ_border_color="#FFFFFF"
+                        app:civ_border_width="5dp" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

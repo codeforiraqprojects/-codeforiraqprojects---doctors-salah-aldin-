@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "170507304066",
+    "firebase_url": "https://doctorsofsalahaldin.firebaseio.com",
+    "project_id": "doctorsofsalahaldin",
+    "storage_bucket": "doctorsofsalahaldin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170507304066:android:90a61b1a1cb7411b",
+        "android_client_info": {
+          "package_name": "org.codeforiraq.doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170507304066-e1taos3gpqdr38efn8t31gm8cg13t3el.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.codeforiraq.doctor",
+            "certificate_hash": "3e53a9c10c7720369e3b71111ff65ce4ef88f267"
+          }
+        },
+        {
+          "client_id": "170507304066-qsq32ooufsdapl22tgn847eth8me211f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.codeforiraq.doctor",
+            "certificate_hash": "e4073862c417829651f4d5dd0534a2cd5c11f591"
+          }
+        },
+        {
+          "client_id": "170507304066-e8mf7bat93ejcfekcdde25f6tgubfcub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.codeforiraq.doctor",
+            "certificate_hash": "05f9c9d628b759d4a13602c0726bb4f0f159d5cb"
+          }
+        },
+        {
+          "client_id": "170507304066-ih3jb6v2fu8q7985qk9ltv072kuap5sc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9tjLLpS222ZFSAs0I-pQfI2AQg63Tdnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170507304066-ih3jb6v2fu8q7985qk9ltv072kuap5sc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

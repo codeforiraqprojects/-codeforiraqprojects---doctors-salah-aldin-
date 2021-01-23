@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".Data_of_User_and_Docotr">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <include
+                android:id="@+id/toolbarmain"
+                layout="@layout/custom_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                <LinearLayout
+                        android:id="@+id/textdata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                    <EditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="الاسم"
+                            android:inputType="textPersonName"
+                            android:textColor="#6A4BC2"
+                            android:textColorHighlight="#6A4BC2"
+                            android:textColorHint="#A46A4BC2"
+                            android:visibility="visible" />
+
+                    <EditText
+                            android:id="@+id/department_doctor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+
+
+                            android:hint="الاختصاص"
+                            android:inputType="textPersonName"
+                            android:textColor="#6A4BC2"
+                            android:textColorHighlight="#6A4BC2"
+                            android:textColorHint="#A46A4BC2"
+                            android:visibility="visible" />
+
+                    <EditText
+                            android:id="@+id/addres_doctor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+
+
+                            android:hint="العنوان"
+                            android:inputType="textPersonName"
+                            android:textColor="#6A4BC2"
+                            android:textColorHighlight="#6A4BC2"
+                            android:textColorHint="#A46A4BC2"
+                            android:visibility="visible" />
+
+                    <EditText
+                            android:id="@+id/phonenum_doctor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+
+
+                            android:hint="رقم الحجز"
+                            android:inputType="number"
+                            android:textColor="#6A4BC2"
+                            android:textColorHighlight="#6A4BC2"
+                            android:textColorHint="#A46A4BC2"
+                            android:visibility="visible" />
+
+                    <EditText
+                            android:id="@+id/signup_doctor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+
+
+                            android:hint="رقم الاجازة"
+                            android:inputType="number"
+                            android:textColor="#F76A4BC2"
+                            android:textColorHighlight="#6A4BC2"
+                            android:textColorHint="#A46A4BC2"
+                            android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <EditText
+                            android:id="@+id/city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:ems="10"
+                            android:hint="المدينة"
+                            android:inputType="textPersonName"
+                            android:textColor="#6A4BC2"
+                            android:textColorHighlight="#6A4BC2"
+                            android:textColorHint="#A46A4BC2" />
+
+                    <Spinner
+                            android:id="@+id/mohafada"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/doctorsignuply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:visibility="visible">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                        <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/image_doctor_btn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="50dp"
+                                    android:layout_weight="1"
+                                    android:text="اضافة"
+                                    android:visibility="visible"
+
+                                    app:backgroundTint="#6A4BC2"
+                                    fab:fab_progress_color="#B298FF"
+                                    fab:srcCompat="@drawable/ic_add_a_photo_black_24dp" />
+
+                            <ImageView
+                                    android:id="@+id/image_doctor"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="50dp"
+
+                                    android:layout_weight="200"
+                                    android:src="@mipmap/ic_launcher"
+                                    android:visibility="visible"
+                                    app:srcCompat="@drawable/code" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                        android:id="@+id/savedata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:background="@drawable/button_background"
+                        android:text="اضافة"
+                        android:textColor="#F3F3F3" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

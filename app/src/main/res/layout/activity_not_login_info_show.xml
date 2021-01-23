@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        android:id="@+id/drow_info_not_login"
+        tools:context=".Not_login_info_show">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <include
+                    android:id="@+id/toolbarmain"
+                    layout="@layout/custom_tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="100dp"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/linera"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                        <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/phonenumber_info_call"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|center|left"
+                                    android:background="@drawable/imageinfo"
+                                    android:text="اضافة"
+                                    android:visibility="visible"
+                                    app:backgroundTint="#FFFFFF"
+                                    fab:maxImageSize="30dp"
+                                    fab:srcCompat="@drawable/ic_call_black_24dp"
+                                    fab:useCompatPadding="true">
+
+                            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+                        </FrameLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/name_info"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:text="الاسم"
+                                    android:textAlignment="viewEnd"
+                                    android:textSize="18sp" />
+
+                            <TextView
+                                    android:id="@+id/phonenumber_info"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:text="رقم الهاتف"
+                                    android:textAlignment="viewEnd"
+                                    android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/deprat_info"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/linera"
+                                    android:padding="15dp"
+                                    android:text="الاختصاص"
+                                    android:textAlignment="viewEnd"
+                                    android:textSize="18sp" />
+
+                            <TextView
+                                    android:id="@+id/address_info"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/linera"
+                                    android:padding="15dp"
+                                    android:text="العنوان"
+                                    android:textAlignment="viewEnd"
+                                    android:textSize="18sp" />
+
+                            <TextView
+                                    android:id="@+id/mohafadainfo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/linera"
+                                    android:padding="15dp"
+                                    android:text="المحافظة"
+                                    android:textAlignment="viewEnd"
+                                    android:textSize="18sp" />
+
+                            <TextView
+                                    android:id="@+id/cityinfo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/linera"
+                                    android:padding="15dp"
+                                    android:text="المدينة"
+                                    android:textAlignment="viewEnd"
+                                    android:textSize="18sp" />
+
+                            <TextView
+                                    android:id="@+id/signnumberinfo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/linera"
+                                    android:padding="15dp"
+                                    android:text="رقم الاجازة"
+                                    android:textAlignment="viewEnd"
+                                    android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/doctor_image_info"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center|fill_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/imageinfo"
+                        app:civ_border_color="#FFFFFF"
+                        app:civ_border_width="10dp" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_info_not_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/hader_nav_layout"
+            app:menu="@menu/nav_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
